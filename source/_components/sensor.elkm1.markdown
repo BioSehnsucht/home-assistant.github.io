@@ -2,7 +2,7 @@
 layout: page
 title: "Elk M1 Sensor"
 description: "Instructions how to integrate Elk M1 sensors into Home Assistant."
-date: 2017-10-10 23:00
+date: 2018-03-27 00:00
 sidebar: true
 comments: false
 sharing: true
@@ -17,6 +17,8 @@ The `elkm1` platform allows you to get data from your [Elk M1](https://www.elkpr
 They will be automatically discovered if the `elkm1` component is loaded.
 
 Supported devices mapped as sensors include:
- * Zones (`binary_sensor` for regular input zones, `sensor` for analog voltage and temperature zones)
- * Thermostats including Keypad Thermostats (`sensor` for temperature)
+ * Zones (`sensor.elkm1_zone_*`) for regular input, analog voltage and temperature zones
+ * Thermostats including Keypad Thermostats (`sensor.elkm1_temp_*`) for temperature
+ * Counters (`sensor.elkm1_counter_*`) - no way yet to set these, but that is planned 
+ * Custom Settings (`sensor.elkm1_setting_*`) - no way yet to set these, but that is planned
 

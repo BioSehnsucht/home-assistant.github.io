@@ -2,7 +2,7 @@
 layout: page
 title: "Elk M1 Controller"
 description: "Instructions how to setup the Elk M1 controller within Home Assistant."
-date: 2017-10-06 01:10
+date: 2018-03-27 00:00
 sidebar: true
 comments: false
 sharing: true
@@ -44,7 +44,6 @@ Configuration variables:
 For the optional settings `area`, `counter`, `keypad`, `output`, `task`, `thermostat`, `setting`, `x10`, and `zone`, they can each have the following subdomain configuration added:
 
 - **enabled** (*Optional*): If enabled is `false`, the subdomain will be skipped (this can speed up startup if you do not need it, for example you don't have any lighting controls connected to the Elk you can disable the x10 subdomain). Default is `true`.
-- **autoexclude** (*Optional*): If autoexclude is `false`, all subdomain devices which pass the include/exclude filtering will appear even if they don't appear to be configured / actually exist. If autoexclude is `true`, then devices which don't appear to exist will also be excluded even if they were otherwise included. Default is `true`.
 - **autohide** (*Optional*): If autohide is `false`, all subdomain devices will show up in the default view of Home Assistant even if they don't appear to actually exist / be configured on the Elk device. If `true`, the Elk platform will attempt to hide missing or otherwise non-configured devices from view, but they will still be available in the states view and to automation rules. Default is `true`.
 - **include** (*Optional*): List of ranges of devices to include. Included devices override behavior of autohide functionality and include them in appearing in Home Assistant regardless of whether they appear to exist.
 - **exclude** (*Optional*): List of ranges of devices to exclude. Excluded devices override behavior of autohide functionality and exclude them from appearing in Home Assistant regardless of whether they appear to exist.
