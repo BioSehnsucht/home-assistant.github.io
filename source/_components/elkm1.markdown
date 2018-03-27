@@ -30,6 +30,8 @@ elkm1:
 Configuration variables:
 
 - **host** (*Required*): The host entry should be either a serial device (e.g. `/dev/ttyUSB0`) or IP and port specified using `socket` URL prefix (e.g. `socket://192.168.1.5:2101`) when using a ELK-M1XEP or ELK-C1M1 network interface. Currently only insecure port (default 2101) is supported.
+- **fastload** (*Optional*): Enables / disables fast loading of saved state on startup. Default is `true`.
+- **fastload_file** (*Optional*): Sets the file path/name to use for fast load functionality. Default is `/config/PyElk-fastload.json`.
 - **area** (*Optional*): Configure settings specific to handling of Elk Areas (partitions) subdomain.
 - **counter** (*Optional*): Configure settings specific to handling of Elk Counters subdomain.
 - **keypad** (*Optional*): Configure settings specific to handling of Elk Keypads subdomain.
